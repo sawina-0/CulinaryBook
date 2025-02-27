@@ -11,6 +11,7 @@ namespace CulinaryBook.AppFrame
 {
     using System;
     using System.Collections.Generic;
+    using System.Linq;
     using System.Windows.Controls;
 
     public partial class Recipes
@@ -32,7 +33,14 @@ namespace CulinaryBook.AppFrame
         public Nullable<int> AuthorID { get; set; }
         public Nullable<int> CookingTime { get; set; }
         
-        
+        public string CurrentPhoto
+        {
+            get
+            {
+                var image = RecipeImages.FirstOrDefault(x => x.RecipeID == RecipeID);
+                return image.CurrentPhoto;
+            }
+        }
 
         public virtual Authors Authors { get; set; }
         public virtual Categories Categories { get; set; }

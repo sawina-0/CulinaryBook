@@ -34,6 +34,7 @@
                             <ColumnDefinition Width="400"/>
                             <ColumnDefinition Width="200"/>
                         </Grid.ColumnDefinitions>
+                        <!--RecipeImages.CurrentPhoto-->
                         <Image Source="{Binding CurrentPhoto}" Grid.Column="0"/>
                         <StackPanel Grid.Column="1" Width="auto" Orientation="Vertical" HorizontalAlignment="Left">
                             <TextBlock Width="auto" TextWrapping="Wrap" Height="auto" Text="{Binding ReciepName}"/>

@@ -1,4 +1,5 @@
-﻿using System;
+﻿using CulinaryBook.AppFrame;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -23,6 +24,7 @@ namespace CulinaryBook.Pages
         public ReciepView()
         {
             InitializeComponent();
+            DataContext = AppConnect.Model.Recipes;
         }
 
         private void ComboFilter_SelectionChanged(object sender, SelectionChangedEventArgs e)
