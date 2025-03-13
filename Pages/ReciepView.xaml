@@ -49,11 +49,22 @@
                         <Run Text="{Binding Description}"/>
                             </TextBlock>
                         </StackPanel>
-                        <TextBlock Text="{Binding CookingTime}" Grid.Column="2" HorizontalAlignment="Right" VerticalAlignment="Center"/>
+                        <StackPanel Grid.Column="2" Width="auto" Orientation="Vertical" HorizontalAlignment="Left">
+                            <TextBlock Width="auto" TextWrapping="Wrap" Height="auto">
+                        <Run Text="Время приготовления: "/>
+                        <Run Text="{Binding CookingTime}"/>
+                                <Run Text="min "/>
+                            </TextBlock>
+                            <Button x:Name="btChangeRecipe" Content="редактировать рецепт" Width="50" Height="50" Click="btChangeRecipe_Click">
+                                
+                            </Button>
+                        </StackPanel>
+                        
 
                     </Grid>
                 </DataTemplate>
             </ListView.ItemTemplate>
         </ListView>
+        <Button x:Name="btAdd" Content="Добавить" Grid.Row="2" Margin="650,14,36,14"/>
     </Grid>
 </Page>

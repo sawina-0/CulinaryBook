@@ -42,5 +42,18 @@ namespace CulinaryBook.Pages
         {
 
         }
+
+        private void btChangeRecipe_Click(object sender, RoutedEventArgs e)
+        {
+            if (ListProducts.SelectedItem is Recipes selectedRecipe)
+            {
+                NavigationService.Navigate(new AddRecipe(selectedRecipe));
+                ListProducts.Items.Refresh();
+            }
+            else
+            {
+                MessageBox.Show("Выделите рецепт");
+            }
+        }
     }
 }
