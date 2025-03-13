@@ -24,7 +24,8 @@ namespace CulinaryBook.Pages
         public ReciepView()
         {
             InitializeComponent();
-            DataContext = AppConnect.Model.Recipes;
+            //ComboFilter.ItemsSource = AppConnect.Model.Categories;
+            ListProducts.ItemsSource = AppConnect.Model.Recipes.ToList();
         }
 
         private void ComboFilter_SelectionChanged(object sender, SelectionChangedEventArgs e)

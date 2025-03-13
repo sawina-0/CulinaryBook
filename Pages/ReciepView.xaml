@@ -9,15 +9,12 @@
       Title="ReciepView">
 
     <Grid>
-        <Grid.ColumnDefinitions>
-            <ColumnDefinition/>
-        </Grid.ColumnDefinitions>
+
         <Grid.RowDefinitions>
             <RowDefinition Height="1*"/>
             <RowDefinition Height="5*"/>
             <RowDefinition Height="1*"/>
         </Grid.RowDefinitions>
-        <ComboBox>fffff</ComboBox>
 
         <StackPanel  Orientation="Horizontal" VerticalAlignment="Center" Grid.Row="0">
             <ComboBox x:Name="ComboFilter" VerticalAlignment="Center" Width="209" Height="26" Margin="5" SelectionChanged="ComboFilter_SelectionChanged"/>
@@ -38,7 +35,7 @@
                         
                         <Image Source="{Binding CurrentPhoto}" Grid.Column="0"/>
                         <StackPanel Grid.Column="1" Width="auto" Orientation="Vertical" HorizontalAlignment="Left">
-                            <TextBlock Width="auto" TextWrapping="Wrap" Height="auto" Text="{Binding ReciepName}"/>
+                            <TextBlock Width="auto" TextWrapping="Wrap" Height="auto" Text="{Binding RecipeName}"/>
                             <TextBlock Width="auto" TextWrapping="Wrap" Height="auto">
                         <Run Text="Kategoria"/>
                         <Run Text="{Binding Categories.CategoryName}"/>
