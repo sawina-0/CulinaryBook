@@ -17,17 +17,7 @@ namespace CulinaryBook.AppFrame
         public int ImageID { get; set; }
         public Nullable<int> RecipeID { get; set; }
         public string ImagePath { get; set; }
-
-        public string CurrentPhoto
-        {
-            get
-            {
-                if (String.IsNullOrEmpty(ImagePath) || String.IsNullOrWhiteSpace(ImagePath))
-                    return @"\Images\picture.png";
-                else return @"\Images\" + ImagePath;
-            }
-        }
-
+    
         public virtual Recipes Recipes { get; set; }
     }
 }

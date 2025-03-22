@@ -8,23 +8,31 @@
       d:DesignHeight="450" d:DesignWidth="800"
       Title="Registration">
 
-    <Grid>
+    <Grid Margin="0,0,0,-12">
         <Grid.Background>
             <RadialGradientBrush>
                 <GradientStop Color="White" Offset="1"/>
                 <GradientStop Color="#FFFF9E9E"/>
             </RadialGradientBrush>
         </Grid.Background>
-        <TextBox x:Name="tbCreateLogin" HorizontalAlignment="Left" Margin="313,152,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="166" Height="27"/>
-        <TextBlock HorizontalAlignment="Left" Margin="313,126,0,0" TextWrapping="Wrap" Text="Create Login" VerticalAlignment="Top" Height="21" Foreground="Red"/>
-        <PasswordBox x:Name="psbCreatePassword" HorizontalAlignment="Left" Margin="313,205,0,0" VerticalAlignment="Top" Width="166" Height="27"/>
-        <TextBlock HorizontalAlignment="Left" Margin="313,179,0,0" TextWrapping="Wrap" Text="Create Password" VerticalAlignment="Top" Height="21" Foreground="Red"/>
-        <GroupBox Header="Acsess" Margin="272,315,272,20" Foreground="Red" BorderBrush="Red"/>
-        <CheckBox x:Name="chbPolicy" Content="Private Policy" HorizontalAlignment="Left" Margin="290,345,0,0" VerticalAlignment="Top" Foreground="#FF737373" FontFamily="Segoe UI Emoji" />
-        <CheckBox x:Name="chbSharing" Content="Data sharing" HorizontalAlignment="Left" Margin="290,391,0,0" VerticalAlignment="Top" Foreground="#FF797979"/>
-        <Button x:Name="btRegistration" Content="Registrate" HorizontalAlignment="Left" Margin="331,259,0,0" VerticalAlignment="Top" Height="32" Width="130" Background="Red" Foreground="White" />
-        <TextBox x:Name="tbName" HorizontalAlignment="Left" Margin="313,94,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="166" Height="27"/>
-        <TextBlock HorizontalAlignment="Left" Margin="313,73,0,0" TextWrapping="Wrap" Text="Enter your name" VerticalAlignment="Top" Height="21" Foreground="Red"/>
+        <TextBox x:Name="tbCreateLogin" HorizontalAlignment="Left" Margin="313,107,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="166" Height="27"/>
+        <TextBlock HorizontalAlignment="Left" Margin="313,81,0,0" TextWrapping="Wrap" Text="Create Login" VerticalAlignment="Top" Height="21" Foreground="Red"/>
+        <PasswordBox x:Name="psbCreatePassword" HorizontalAlignment="Left" Margin="313,160,0,0" VerticalAlignment="Top" Width="166" Height="27"/>
+        <TextBlock HorizontalAlignment="Left" Margin="313,134,0,0" TextWrapping="Wrap" Text="Create Password" VerticalAlignment="Top" Height="21" Foreground="Red"/>
+        <Button x:Name="btRegistration" Content="Registrate" HorizontalAlignment="Left" Margin="331,383,0,0" VerticalAlignment="Top" Height="32" Width="130" Background="Red" Foreground="White" Click="btRegistration_Click" />
+        <TextBox x:Name="tbName" HorizontalAlignment="Left" Margin="313,49,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="166" Height="27"/>
+        <TextBlock HorizontalAlignment="Left" Margin="313,28,0,0" TextWrapping="Wrap" Text="Enter your name" VerticalAlignment="Top" Height="21" Foreground="Red"/>
+        <PasswordBox x:Name="psbPasswordAgain" HorizontalAlignment="Left" Margin="313,212,0,0" VerticalAlignment="Top" Width="166" Height="26"/>
+        <TextBlock HorizontalAlignment="Left" Margin="313,186,0,0" TextWrapping="Wrap" Text="Enter password again" VerticalAlignment="Top" Height="21" Foreground="Red"/>
+        <DatePicker x:Name="dpBirthday" HorizontalAlignment="Left" Margin="313,258,0,0" VerticalAlignment="Top"/>
+        <TextBlock HorizontalAlignment="Left" Margin="313,237,0,0" TextWrapping="Wrap" Text="Day of birth" VerticalAlignment="Top" Height="21" Foreground="Red"/>
+        <TextBox x:Name="tbWorkExp" HorizontalAlignment="Left" Margin="427,258,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="52" Height="24"/>
+        <TextBlock HorizontalAlignment="Left" Margin="394,238,0,0" TextWrapping="Wrap" Text="Work expirience" VerticalAlignment="Top" Height="21" Foreground="Red"/>
+        <TextBox x:Name="tbEmail" HorizontalAlignment="Left" Margin="313,303,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="166" Height="27"/>
+        <TextBox x:Name="tbPhoneNum" HorizontalAlignment="Left" Margin="313,351,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="166" Height="27"/>
+        <TextBlock HorizontalAlignment="Left" Margin="313,282,0,0" TextWrapping="Wrap" Text="Enter email" VerticalAlignment="Top" Height="21" Foreground="Red"/>
+        <TextBlock HorizontalAlignment="Left" Margin="313,330,0,0" TextWrapping="Wrap" Text="Enter phone number" VerticalAlignment="Top" Height="21" Foreground="Red"/>
+        <Button x:Name="btGoBack" Content="Go back" HorizontalAlignment="Left" Margin="331,420,0,0" VerticalAlignment="Top" Height="32" Width="130" Background="Red" Foreground="White" Click="btGoBack_Click" />
 
     </Grid>
 </Page>
