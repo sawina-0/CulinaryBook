@@ -20,5 +20,6 @@ namespace CulinaryBook.AppFrame
     
         public virtual Recipes Recipes { get; set; }
         public virtual Tags Tags { get; set; }
+        public virtual Tags Tags1 { get; set; }
     }
 }

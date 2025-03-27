@@ -28,7 +28,11 @@ namespace CulinaryBook.AppFrame
         public string WorkExpirience { get; set; }
         public string Email { get; set; }
         public string PhoneNum { get; set; }
-    
+        public override string ToString()
+        {
+            return AuthorName;
+        }
+
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
         public virtual ICollection<Recipes> Recipes { get; set; }
     }

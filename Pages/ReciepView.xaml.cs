@@ -21,11 +21,14 @@ namespace CulinaryBook.Pages
     /// </summary>
     public partial class ReciepView : Page
     {
+        //private List<Recipes> allRecipes;
         public ReciepView()
         {
             InitializeComponent();
             //ComboFilter.ItemsSource = AppConnect.Model.Categories;
             ListProducts.ItemsSource = AppConnect.Model.Recipes.ToList();
+            //allRecipes = AppConnect.Model.Recipes.ToList();
+
         }
 
         private void ComboFilter_SelectionChanged(object sender, SelectionChangedEventArgs e)
@@ -40,7 +43,8 @@ namespace CulinaryBook.Pages
 
         private void TextSearch_TextChanged(object sender, TextChangedEventArgs e)
         {
-
+            //string searchText = TextSearch.Text.ToLower();
+            //var filteredRecipes = allRecipes.Where()
         }
 
         private void btChangeRecipe_Click(object sender, RoutedEventArgs e)
@@ -54,6 +58,11 @@ namespace CulinaryBook.Pages
             {
                 MessageBox.Show("Выделите рецепт");
             }
+        }
+
+        private void btAdd_Click(object sender, RoutedEventArgs e)
+        {
+
         }
     }
 }

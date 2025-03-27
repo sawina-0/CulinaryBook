@@ -18,6 +18,7 @@ namespace CulinaryBook.AppFrame
         public Tags()
         {
             this.RecipeTags = new HashSet<RecipeTags>();
+            this.RecipeTags1 = new HashSet<RecipeTags>();
         }
     
         public int TagID { get; set; }
@@ -25,5 +26,7 @@ namespace CulinaryBook.AppFrame
     
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
         public virtual ICollection<RecipeTags> RecipeTags { get; set; }
+        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
+        public virtual ICollection<RecipeTags> RecipeTags1 { get; set; }
     }
 }

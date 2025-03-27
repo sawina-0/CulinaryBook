@@ -33,7 +33,7 @@ namespace CulinaryBook.Pages
                 var user = AppConnect.Model.Authors.FirstOrDefault(u => u.Login == txbLogin.Text && u.Password == psbPassword.Password);
                 if (user != null)
                 {
-                    MessageBox.Show($"Dobry den, {user.AuthorName}!");
+                    MessageBox.Show($"Dobry den,  {user.AuthorName}!");
                     AppFrame.MainFrame.FrameMain.Navigate(new ReciepView());
                 }
                 else

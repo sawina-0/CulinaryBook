@@ -12,11 +12,11 @@
         <TextBox x:Name="tbRecipeName" HorizontalAlignment="Center" Margin="0,42,0,0" TextWrapping="Wrap" Text="{Binding RecipeName}" VerticalAlignment="Top" Width="143"/>
         <TextBox x:Name="tbRecipeDesc" HorizontalAlignment="Center" Margin="0,86,0,0" TextWrapping="Wrap" Text="{Binding Description}" VerticalAlignment="Top" Width="143" Height="94"/>
         <TextBox x:Name="tbRecipeTime" HorizontalAlignment="Center" Margin="0,304,0,0" TextWrapping="Wrap" Text="{Binding CookingTime}" VerticalAlignment="Top" Width="144"/>
-        <TextBox x:Name="tbRecipeImage" HorizontalAlignment="Center" Margin="0,348,0,0" TextWrapping="Wrap" Text="{Binding RecipeImages.ImagePath}" VerticalAlignment="Top" Width="143"/>
-        <Button x:Name="btLoadImage" Content="Загрузить изображение" HorizontalAlignment="Center" Margin="0,375,0,0" VerticalAlignment="Top" Width="143" Background="Red" Foreground="#FFFFFBFB"/>
-        <Button x:Name="btSaveRecipe" Content="Сохранить рецепт" HorizontalAlignment="Center" Margin="0,410,0,0" VerticalAlignment="Top" Width="143" Foreground="White" Background="Red"/>
-        <ComboBox x:Name="cbCategory" HorizontalAlignment="Center" Margin="0,206,0,0" VerticalAlignment="Top" Width="143" SelectedItem="{Binding Categories.CategoryName}"/>
-        <ComboBox x:Name="cbAuthor" HorizontalAlignment="Center" Margin="0,254,0,0" VerticalAlignment="Top" Width="144" SelectedItem="{Binding Authors.AuthorName}"/>
+        <TextBox x:Name="tbRecipeImage" HorizontalAlignment="Center" Margin="0,348,0,0" TextWrapping="Wrap" Text="{Binding RecipeImages.ImagePath}" VerticalAlignment="Top" Width="143" IsEnabled="False"/>
+        <Button x:Name="btLoadImage" Content="Загрузить изображение" HorizontalAlignment="Center" Margin="0,375,0,0" VerticalAlignment="Top" Width="143" Background="Red" Foreground="#FFFFFBFB" Click="btLoadImage_Click"/>
+        <Button x:Name="btSaveRecipe" Content="Сохранить рецепт" HorizontalAlignment="Center" Margin="0,410,0,0" VerticalAlignment="Top" Width="143" Foreground="White" Background="Red" Click="btSaveRecipe_Click"/>
+        <ComboBox x:Name="cbCategory" HorizontalAlignment="Center" Margin="0,206,0,0" VerticalAlignment="Top" Width="143" SelectedIndex="{Binding CategoryID}"/>
+        <ComboBox x:Name="cbAuthor" HorizontalAlignment="Center" Margin="0,254,0,0" VerticalAlignment="Top" Width="144" SelectedIndex="{Binding AuthorID}"/>
         <Label Content="Название рецепта" HorizontalAlignment="Left" Margin="328,16,0,0" VerticalAlignment="Top" Background="{x:Null}" Width="123"/>
         <Label Content="Описание" HorizontalAlignment="Left" Margin="328,60,0,0" VerticalAlignment="Top" Background="{x:Null}" Width="77"/>
         <Label Content="Категория" HorizontalAlignment="Left" Margin="328,180,0,0" VerticalAlignment="Top" Background="{x:Null}" Width="78"/>

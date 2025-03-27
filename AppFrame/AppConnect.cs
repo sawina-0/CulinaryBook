@@ -8,6 +8,6 @@ namespace CulinaryBook.AppFrame
 {
     internal class AppConnect
     {
-        public static CookBookEntities Model;
+        public static CookBookEntities1 Model;
     }
 }
