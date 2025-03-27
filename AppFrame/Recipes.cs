@@ -36,7 +36,8 @@ namespace CulinaryBook.AppFrame
             get
             {
                 if(RecipeImages.Count == 0) return "/Images/picture.png";
-                return "/Images/" + RecipeImages.First().ImagePath;
+                int index = RecipeImages.Count > 1 ? 1 : 0;
+                return "/Images/" + RecipeImages.ElementAt(index).ImagePath;
             }
         }
         public virtual Authors Authors { get; set; }
