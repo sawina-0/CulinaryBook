@@ -17,8 +17,11 @@
         </Grid.RowDefinitions>
 
         <StackPanel  Orientation="Horizontal" VerticalAlignment="Center" Grid.Row="0">
-            <ComboBox x:Name="ComboFilter" VerticalAlignment="Center" Width="209" Height="26" Margin="5" SelectionChanged="ComboFilter_SelectionChanged"/>
-            <ComboBox x:Name="ComboSort" VerticalAlignment="Center" Width="209" Height="26" Margin="5" SelectionChanged="ComboSort_SelectionChanged"/>
+            <ComboBox x:Name="ComboFilter" VerticalAlignment="Center" Width="209" Height="26" Margin="5" SelectionChanged="ComboFilter_SelectionChanged" />
+            <ComboBox x:Name="ComboSort" VerticalAlignment="Center" Width="209" Height="26" Margin="5" SelectionChanged="ComboSort_SelectionChanged">
+                <ComboBoxItem Content="Sort by name"/>
+                <ComboBoxItem Content="Sort by time"/>
+            </ComboBox>
             <TextBox x:Name="TextSearch" TextWrapping="Wrap" VerticalAlignment="Center" Width="186" Height="26" Margin="5" TextChanged="TextSearch_TextChanged"/>
 
         </StackPanel>
